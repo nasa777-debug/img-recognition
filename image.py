@@ -7,6 +7,6 @@ def images_are_equal(img_path1, img_path2):
     diff = ImageChops.difference(img1, img2)
     return diff.getbbox() is None
 image1 = "image1.jpg"
-image2 = "image1.jpg"
+image2 = "black.jpg"
 result = images_are_equal(image1, image2)
 print("Images are identical." if result else "Images are different.")
